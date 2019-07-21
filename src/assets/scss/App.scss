@@ -1,0 +1,154 @@
+html {
+  background: #1d8dd7;
+}
+.columns {
+  margin: 0;
+}
+.nav-tag {
+  padding-right: 30px;
+}
+.tag-notif {
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  margin-left: 10px;
+
+  @media (max-width: 768px) {
+    margin-left: -2px;
+  }
+}
+.hero {
+  background-color: $theme;
+}
+.navbar {
+  background: $theme;
+
+  &-item {
+    background-color: $theme;
+    color: $text !important;
+    &.is-active {
+      background-color: $selected !important;
+      color: $text !important;
+    }
+    &:hover {
+      background-color: $selected !important;
+      color: $text !important;
+    }
+  }
+
+  .is--brand {
+    &:hover {
+      background-color: $theme !important;
+    }
+  }
+
+  &-brand-logo {
+    max-height: 3rem !important;
+    background-color: $theme;
+    border-radius: 0.25em;
+    padding: 0.25em;
+  }
+
+  &-dropdown {
+    background-color: $theme;
+    .navbar-item {
+      background-color: $theme;
+    }
+  }
+
+  &-burger {
+    background-color: $theme !important;
+    border: 0;
+    span {
+      background-color: $cyan;
+    }
+  }
+
+  &-link {
+    color: $text;
+
+    figure {
+      img {
+        border-radius: 50%;
+        max-height: 2em;
+      }
+    }
+
+    &:hover {
+      background-color: $theme;
+    }
+  }
+}
+
+.message.is-dark {
+  .message-body {
+    background-color: lighten($theme, 5%);
+  }
+}
+
+.breadcrumb:not(:last-child) {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1088px) {
+  .navbar-item.has-dropdown:hover .navbar-link,
+  .navbar-item.has-dropdown.is-active .navbar-link {
+    background-color: $theme;
+  }
+}
+// navigation left area
+.aside {
+  background: $theme;
+  padding: 2em 0.2em 0 1em;
+
+  a {
+    color: $text;
+  }
+
+  .menu-list {
+    li {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+// main area
+.main {
+  padding: 2em 1em 0 1em;
+}
+
+.menu-label {
+  color: $cyan;
+  margin-left: 0.5em;
+}
+
+.block {
+  margin-top: 0.5em;
+}
+.app-container{
+  width: 100%;
+  padding:0 20px;
+  background: #1d8dd7;
+}
+.dashboard-container{
+  background: $white;
+  padding: 20px;
+  border: 5px solid #1a7ec2;
+}
+.logo{
+  background:url('../images/logo.png') repeat;
+  width:53px;
+  height: 53px;
+  display: block;
+}
+.chart-container{
+  background:#fff url('../images/chartbg.jpg') repeat;
+  padding: 10px 20px;
+  border: 5px solid #1a7ec2;
+}
+
+.portfolio-bg{
+  background: $white;
+  padding: 10px 20px;
+  border: 5px solid #1a7ec2;
+}
